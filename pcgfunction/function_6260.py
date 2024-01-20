@@ -71,9 +71,9 @@ def DN_print_6260(userfoldertimepath):
                'Article', 'Description', 'Article&Color', 'Color', 'QtySTO', 'QtyDN', 'Unit']].copy()
     df3['DN'] = '0' + df3['DN']
     df3['GA'] = df3['Article'].str[:15]
-    df3['Size'] = df3['Description'].apply(
+    df3['Size'] = df3['Description'].astype(str).apply(
         lambda x: x.split(",")[1] if "," in x else x).str.strip(' ')
-    df3['Description'] = df3['Description'].apply(
+    df3['Description'] = df3['Description'].astype(str).apply(
         lambda x: x.split(",")[0] if "," in x else x)
     df3['QtySTO'] = df3['QtySTO'].astype(float)
     df3['QtyDN'] = df3['QtyDN'].astype(float)
