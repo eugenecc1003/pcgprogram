@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eugenezone</title>
+</head>
+
+<body>
+    <h2>Welcome {{nickname}} !! Your mail is {{email}}</h2>
+    <!--<div>Nice to meet you!!</div>-->
+    <duv><a href="/signout">signout</a></duv>
+    <hr />
+    <span>Warning: </span>
+    <font color="red">{{alert}}</font>
+    <hr />
+    <div>
+        <h2>MBPO</h2>
+        <table border="1">
+            <tr>
+                <td>Brand</td>
+                <td>NB_29</td>
+                <td>Merrell_27</td>
+                <td>Timberland_38</td>
+            </tr>
+            <tr>
+                <td>SAMPLE</td>
+                <td>
+                    <form action="/sample_29_APL" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="sample_APL" name="upload"></div>
+                    </form>
+                    <form action="/sample_29_MBPO_PartnerFunction" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="PartnerFunction" name="upload"></div>
+                    </form>
+                    <form action="/sample_29_MBPO_CustomerCode" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="CustomerCode" name="upload"></div>
+                    </form>
+                </td>
+                <td>
+                    <form action="/sample_27_GTN" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="sample_GTN" name="upload"></div>
+                    </form>
+                </td>
+                <td>
+                    <form action="/sample_38_GTN" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="sample_GTN" name="upload"></div>
+                    </form>
+                    <form action="/sample_38_MBPO_PartnerFunction" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="PartnerFunction" name="upload"></div>
+                    </form>
+                    <form action="/sample_38_MBPO_CustomerCode" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="CustomerCode" name="upload"></div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>OUTPUT</td>
+                <td>
+                    <form action="/MBPO29" enctype='multipart/form-data' method='POST'>
+                        <input type="radio" name="option" value="1SO1GA1item" checked>1SO1GA1item<br>
+                        <input type="radio" name="option" value="1SO1GAMitem">1SO1GAMitem(PANAMA)<br>
+                        <!--<div><input type="file" value="APL" name="APL" accept=".xlsx,.xls" multiple></div>-->
+                        <div>APL: <br /><input type="file" name="APL29" accept=".xlsx,.xls"></div>
+                        <div>PartnerFunction: <br /><input type="file" name="PF29" accept=".xlsx,.xls"></div>
+                        <div>CustomerCode: <br /><input type="file" name="CC29" accept=".xlsx,.xls"></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+                <td>
+                    <form action="/MBPO27" enctype='multipart/form-data' method='POST'>
+                        <div><input type="file" name="file[]" accept=".xlsx,.xls" multiple></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+                <td>
+                    <form action="/MBPO38" enctype='multipart/form-data' method='POST'>
+                        <div>GTN: <br /><input type="file" name="GTN38" accept=".xlsx,.xls"></div>
+                        <div>PartnerFunction: <br /><input type="file" name="PF38" accept=".xlsx,.xls"></div>
+                        <div>CustomerCode: <br /><input type="file" name="CC38" accept=".xlsx,.xls"></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+
+        <h2>Tool_608A</h2>
+        <table border="1">
+            <tr>
+                <td>tool name</td>
+                <td>barcode</td>
+                <td>NW/GW</td>
+            </tr>
+            <tr>
+                <td>SAMPLE</td>
+                <td>
+                    <form action="/sample_29_barcode" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="barcode" name="upload"></div>
+                    </form>
+                </td>
+                <td>
+                    <form action="/sample_29_ZRSD1002M18" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="ZRSD1002M18" name="upload"></div>
+                    </form>
+                    <form action="/sample_29_ZRSD1002P2" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="ZRSD1002P2" name="upload"></div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>OUTPUT</td>
+                <td>
+                    <form action="/barcode29" enctype='multipart/form-data' method='POST'>
+                        <div><input type="file" name="barcode29" accept=".xlsx,.xls"></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+                <td>
+                    <form action="/NWGW29" enctype='multipart/form-data' method='POST'>
+                        <div>tolerance: <br /><input type="number" name="tolerance" value=7 min=0 max=100>%</div>
+                        <div>M18: <br /><input type="file" name="M18_29" accept=".xlsx,.xls"></div>
+                        <div>P2: <br /><input type="file" name="P2_29" accept=".xlsx,.xls" multiple></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Tool_6260</h2>
+        <table border="1">
+            <tr>
+                <td>tool name</td>
+                <td>
+                    <div>DN_transfer_format</div>
+                    <div>ZRSD1039 select all</div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>SAMPLE</td>
+                <td>
+                    <form action="/sample_6260_ZRSD1039" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="ZRSD1039" name="upload"></div>
+                    </form>
+                    <form action="/sample_6260_ZRMM0002" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="ZRMM0002" name="upload"></div>
+                    </form>
+                </td>
+
+            </tr>
+            <tr>
+                <td>OUTPUT</td>
+                <td>
+                    <form action="/dnprint6260" enctype='multipart/form-data' method='POST'>
+                        <div>ZRSD1039: <br /><input type="file" name="zrsd1039" accept=".xlsx,.xls"></div>
+                        <div>ZRMM0002: <br /><input type="file" name="zrmm0002" accept=".xlsx,.xls"></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>Tool_ZO13_transfer</h2>
+        <table border="1">
+            <tr>
+                <td>tool name</td>
+                <td>
+                    <div>ZO13_transfer_format</div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>SAMPLE</td>
+                <td>
+                    <form action="/sample_ZO13" enctype='multipart/form-data' method='POST'>
+                        <div><input type="submit" value="ZO13" name="upload"></div>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>OUTPUT1</td>
+                <td>
+                    <form action="/zo13vlookup" enctype='multipart/form-data' method='POST'>
+                        <div>ZO13 raw data: <br /><input type="file" name="zo13rawdata" accept=".xlsx,.xls"></div>
+                        <div>Custom data: <br /><input type="file" name="cudata" accept=".xlsx,.xls"></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+
+            </tr>
+            <tr>
+                <td>OUTPUT2</td>
+                <td>
+                    <form action="/zo13transfer" enctype='multipart/form-data' method='POST'>
+                        <div>organization: <br /><input type="text" name="organization" value='6010'></div>
+                        <div>channel: <br /><input type="text" name="channel" value='T2'></div>
+                        <div>factory: <br /><input type="text" name="factory" value='8005'></div>
+                        <div>ZO13 transfer: <br /><input type="file" name="zo13transfer" accept=".xlsx,.xls"></div>
+                        <div><br /><input type="submit" value="submit!!"></div>
+                    </form>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
